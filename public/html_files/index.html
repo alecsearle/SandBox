@@ -8,32 +8,43 @@
     <link rel="stylesheet" href="../css_sheets/style.css" />
   </head>
   <body>
-    <!-- Header (Dynamic Title)-->
-    <header>
-      <span id="header-title">Home</span>
-    </header>
-
     <div id="app">
-      <h1>{{ message }}</h1>
+      <!-- Header (Dynamic Title)-->
+      <header>
+        <span id="header-title">New Error</span>
+      </header>
+
+      <!-- Body -->
+      <form id="form">
+        <h3>Year</h3>
+        <input type="number" required v-model="vehicleYear" />
+        <br />
+        <h3>Make</h3>
+        <input type="text" required v-model="vehicleMake" />
+        <br />
+        <h3>Model</h3>
+        <input type="text" required v-model="vehicleModel" />
+        <br />
+        <h3>Code</h3>
+        <input type="text" required v-model="vehicleCode" />
+        <br />
+        <button type="submit">READ</button>
+      </form>
+
+      <!-- Footer Navigation -->
+      <footer>
+        <div class="footer-item">
+          <a href="myGarage.html" class="nav-link" data-title="My Garage">My Garage</a>
+        </div>
+        <div class="footer-item">
+          <a href="index.html" class="nav-link" data-title="New Error">New Error / IndeX Page</a>
+        </div>
+        <div class="footer-item">
+          <a href="profile.html" class="nav-link" data-title="Profile">Profile</a>
+        </div>
+      </footer>
+
+      <script src="../js_files/app.js"></script>
     </div>
-
-    <!-- Footer Navigation -->
-    <footer>
-      <div class="footer-item">
-        <a href="myGarage.html" class="nav-link" data-title="My Garage"
-          >My Garage</a
-        >
-      </div>
-      <div class="footer-item">
-        <a href="index.html" class="nav-link" data-title="New Error"
-          >New Error / IndeX Page</a
-        >
-      </div>
-      <div class="footer-item">
-        <a href="profile.html" class="nav-link" data-title="Profile">Profile</a>
-      </div>
-    </footer>
-
-    <script src="../js_files/app.js"></script>
   </body>
 </html>
