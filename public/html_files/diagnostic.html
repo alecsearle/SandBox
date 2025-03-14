@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>SandBox App</title>
+    <link rel="stylesheet" href="../css_sheets/diagnostic.css" />
+  </head>
+  <body>
+    <!-- Header (Dynamic Title)-->
+    <header>
+      <span id="header-title">Home</span>
+    </header>
+
+    <div id="app">
+      <h1>{{ message }}</h1>
+    </div>
+
+    <!-- Footer Navigation -->
+    <footer>
+      <div class="footer-item">
+        <a href="myGarage.html" class="nav-link" data-title="My Garage"
+          >My Garage</a
+        >
+      </div>
+      <div class="footer-item">
+        <a href="index.html" class="nav-link" data-title="New Error"
+          >New Error / IndeX Page</a
+        >
+      </div>
+      <div class="footer-item">
+        <a href="profile.html" class="nav-link" data-title="Profile">Profile</a>
+      </div>
+    </footer>
+
+    <script src="../js_files/diagnostic.js"></script>
+  </body>
+</html>
