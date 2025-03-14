@@ -8,9 +8,32 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Header (Dynamic Title)-->
+    <header>
+      <span id="header-title">Home</span>
+    </header>
+
     <div id="app">
       <h1>{{ message }}</h1>
     </div>
+
+    <!-- Footer Navigation -->
+    <footer>
+      <div class="footer-item">
+        <a href="myGarage.html" class="nav-link" data-title="My Garage"
+          >My Garage</a
+        >
+      </div>
+      <div class="footer-item">
+        <a href="index.html" class="nav-link" data-title="New Error"
+          >New Error / IndeX Page</a
+        >
+      </div>
+      <div class="footer-item">
+        <a href="profile.html" class="nav-link" data-title="Profile">Profile</a>
+      </div>
+    </footer>
+
     <script src="app.js"></script>
   </body>
 </html>
