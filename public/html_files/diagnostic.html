@@ -5,20 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <title>SandBox App</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
     <link rel="stylesheet" href="../css_sheets/global_styles.css" />
     <link rel="stylesheet" href="../css_sheets/diagnostic.css" />
   </head>
   <body>
     <!-- Header (Dynamic Title)-->
+    <!-- Header -->
     <header>
-      <span id="header-title">Home</span>
+      <span id="header-title">Code</span>
+      <br />
+      <span>Name of Issue</span>
     </header>
 
+    <!-- Vue App Container -->
     <div id="app">
-      <h1>{{ message }}</h1>
-    </div>
+      <!-- Navigation Bar -->
+      <nav>
+        <div
+          v-for="page in pages"
+          :key="page"
+          class="nav-item"
+          :class="{ active: currentPage === page }"
+        >
+          <a :href="'#' + page" class="nav-link">{{ page }}</a>
+        </div>
+      </nav>
 
+      <!-- Dynamic Content Sections -->
+      <div class="content-container">
+        <section id="Overview" class="content-section">
+          <h1>Rate:</h1>
+          <p>{{ rating }}</p>
+          <h1>Description:</h1>
+          <p>{{ description }}</p>
+          <h1>Potential Causes:</h1>
+          <p>{{ potential_causes }}</p>
+        </section>
+
+        <section id="Documents" class="content-section">
+          <h1>Documents</h1>
+          <p>Content for Documents</p>
+        </section>
+
+        <section id="Parts" class="content-section">
+          <h1>Parts</h1>
+          <p>Content for Parts</p>
+        </section>
+
+        <section id="Youtube" class="content-section">
+          <h1>Youtube</h1>
+          <p>Content for Youtube</p>
+        </section>
+
+        <section id="Forums" class="content-section">
+          <h1>Forums</h1>
+          <p>Content for Forums</p>
+        </section>
+
+        <section id="Mechanics" class="content-section mech">
+          <h1>Mechanics</h1>
+          <p>Content for Mechanics</p>
+        </section>
+      </div>
+    </div>
     <!-- Footer Navigation -->
     <footer>
       <div class="footer-item">
