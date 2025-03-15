@@ -45,15 +45,15 @@ footer {
   flex: 1;
 }
 
-.footer-item a {
+.footer-item i {
   text-decoration: none;
   color: #ccc5b9;
-  font-size: 14px;
+  font-size: 32px;
   display: block;
   padding: 10px;
 }
 
-.footer-item a.active {
+.footer-item i.active {
   color: #007bff;
   font-weight: bold;
 }
