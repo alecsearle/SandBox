@@ -1,0 +1,89 @@
+/* Back Button - Fits Perfectly Inside the Header */
+.back-button {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%); /* Centers it vertically within the header */
+  background-color: transparent;
+  color: #ccc5b9;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 2px solid #ccc5b9;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease, border 0.3s ease;
+}
+
+/* Back Button Icon */
+.back-button::before {
+  content: "←"; /* Unicode left arrow */
+  font-size: 18px;
+}
+
+/* Hover Effect */
+.back-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-50%) scale(1.05);
+  border-color: #fff;
+  color: #fff;
+}
+
+/* Click (Active) Effect */
+.back-button:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+/* Body */
+#form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  font-size: 24px;
+  width: 40%;
+  height: 40px;
+  padding: 10px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #eb5e27;
+  color: #ccc5b9;
+  background-color: #5e5c59;
+}
+
+input:focus {
+  outline: none;
+  transition: 0.2s ease-in-out;
+  border: 2px solid #eb5e27;
+}
+
+.submit_button {
+  color: #ccc5b9;
+  background-color: #eb5e27;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.submit_button:hover {
+  background-color: #d94d1a;
+  transform: scale(1.05);
+}
+
+.submit_button:active {
+  transform: scale(0.98);
+}

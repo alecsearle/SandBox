@@ -4,47 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <title>SandBox App</title>
+    <title>Connect Options</title>
+    <link rel="stylesheet" href="../css_sheets/global_styles.css" />
     <link rel="stylesheet" href="../css_sheets/style.css" />
   </head>
   <body>
     <div id="app">
-      <!-- Header (Dynamic Title)-->
       <header>
-        <span id="header-title">New Error</span>
+        <span id="header-title">Choose Connection Type</span>
       </header>
 
-      <!-- Body -->
-      <form id="form">
-        <h3>Year</h3>
-        <input type="number" required v-model="vehicleYear" />
-        <br />
-        <h3>Make</h3>
-        <input type="text" required v-model="vehicleMake" />
-        <br />
-        <h3>Model</h3>
-        <input type="text" required v-model="vehicleModel" />
-        <br />
-        <h3>Code</h3>
-        <input type="text" required v-model="vehicleCode" />
-        <br />
-        <button type="submit">READ</button>
-      </form>
+      <div class="body_content">
+        <h2>How would you like to connect?</h2>
+        <button onclick="window.location.href='manual.html'">Manual Input</button>
+        <button onclick="window.location.href='bluetooth.html'">Bluetooth</button>
+      </div>
 
-      <!-- Footer Navigation -->
       <footer>
         <div class="footer-item">
-          <a href="myGarage.html" class="nav-link" data-title="My Garage">My Garage</a>
+          <a href="myGarage.html">My Garage</a>
         </div>
         <div class="footer-item">
-          <a href="index.html" class="nav-link" data-title="New Error">New Error / IndeX Page</a>
+          <a href="index.html">New Error / Index Page</a>
         </div>
         <div class="footer-item">
-          <a href="profile.html" class="nav-link" data-title="Profile">Profile</a>
+          <a href="profile.html">Profile</a>
         </div>
       </footer>
-
-      <script src="../js_files/app.js"></script>
     </div>
   </body>
 </html>

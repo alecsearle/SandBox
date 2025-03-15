@@ -1,0 +1,93 @@
+/* Back Button - Fits Perfectly Inside the Header */
+.back-button {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%); /* Centers it vertically within the header */
+  background-color: transparent;
+  color: #ccc5b9;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 2px solid #ccc5b9;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease, border 0.3s ease;
+}
+
+/* Back Button Icon */
+.back-button::before {
+  content: "←"; /* Unicode left arrow */
+  font-size: 18px;
+}
+
+/* Hover Effect */
+.back-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-50%) scale(1.05);
+  border-color: #fff;
+  color: #fff;
+}
+
+/* Click (Active) Effect */
+.back-button:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+/* Body */
+.body_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1; /* Fills available space */
+  gap: 25px; /* Better spacing */
+  padding: 40px 20px; /* More consistent spacing */
+}
+
+h2 {
+  font-size: 22px;
+}
+
+#obdSensor {
+  border: solid 2px #252422;
+  background-color: #5e5c59;
+  width: 60%;
+  max-width: 400px;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.submit_button {
+  color: #ccc5b9;
+  background-color: #eb5e27;
+  width: 150px;
+  height: 150px;
+  padding: 0;
+  margin-top: 10px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.submit_button:hover {
+  background-color: #d94d1a;
+  transform: scale(1.05);
+}
+
+.submit_button:active {
+  transform: scale(0.98);
+}

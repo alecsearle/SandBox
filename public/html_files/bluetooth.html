@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>SandBox App</title>
+    <link rel="stylesheet" href="../css_sheets/global_styles.css" />
+    <link rel="stylesheet" href="../css_sheets/bluetooth.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- Header (Dynamic Title)-->
+      <header>
+        <button onclick="window.location.href='index.html'" class="back-button">Back</button>
+        <span id="header-title">New Error - Bluetooth</span>
+      </header>
+
+      <!-- Body -->
+      <div class="body_content">
+        <h2>Connected to:</h2>
+        <div id="obdSensor">{{ obdSensor }}</div>
+        <button type="submit" class="submit_button">Find Sensor</button>
+      </div>
+
+      <!-- Footer Navigation -->
+      <footer>
+        <div class="footer-item">
+          <a href="myGarage.html" class="nav-link" data-title="My Garage">My Garage</a>
+        </div>
+        <div class="footer-item">
+          <a href="index.html" class="nav-link" data-title="New Error">New Error / IndeX Page</a>
+        </div>
+        <div class="footer-item">
+          <a href="profile.html" class="nav-link" data-title="Profile">Profile</a>
+        </div>
+      </footer>
+
+      <script src="../js_files/bluetooth.js"></script>
+    </div>
+  </body>
+</html>
